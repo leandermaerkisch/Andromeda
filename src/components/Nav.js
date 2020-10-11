@@ -1,30 +1,23 @@
-  import React from 'react';
-  import { Link } from 'react-router';
+  import React, { Component } from 'react';
+  import { Button } from '@material-ui/core';
+  import { Link } from 'react-router-dom';
 
-  export default class Nav extends React.Component {
-    render() {    
+  class Nav extends Component {
+    render() {
       return (
-        <nav className="Nav">
-          <div className="Nav__container">
-            <Link to="/" className="Nav__brand">
-              <img src="logo.svg" className="Nav__logo" />
-            </Link>
-
-            <div className="Nav__right">
-              <ul className="Nav__item-wrapper">
-                <li className="Nav__item">
-                  <Link className="Nav__link" to="/path1">Link 1</Link>
-                </li>
-                <li className="Nav__item">
-                  <Link className="Nav__link" to="/path2">Link 2</Link>
-                </li>
-                <li className="Nav__item">
-                  <Link className="Nav__link" to="/path3">Link 3</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <div>
+          <p>Logo </p>
+          <ul className= "nav-links">
+          <Link to '/sign-in-employee'>
+            <li> Employee login</li>
+          </Link>
+          <Link>
+            <li> Recruiter login</li>
+          </Link>
+        </div>
       );
     }
   }
+
+export default Nav; 
+

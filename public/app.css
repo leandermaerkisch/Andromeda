@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+  background-color: lightgray;
 }
 
  .App {
@@ -33,6 +34,35 @@ body {
 .App-link {
   color: #61dafb;
 }
+
+.Job-advert .centered-element{
+  height: 60px;
+  width: 350px;
+  background: #FBFBFD
+
+}
+
+.Employee-advert .centered-element{
+  height: 60px;
+  width: 350px;
+  background: #FBFBFD
+
+}
+
+.Browse-jobs-employee {
+  justify-content: space-around;
+}
+
+.Side-bar {
+  background: #F3F5FF;
+  align-items: center;
+  float:left; 
+  width:20%; 
+  height: viewHeight;
+}
+
+
+
 
 @keyframes App-logo-spin {
   from {
